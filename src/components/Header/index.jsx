@@ -1,10 +1,13 @@
-// import Logo from "../Logo";
+import "./header.css";
+import Logo from "../Logo";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
-      <div>{/* <Logo /> */}</div>
+    <header className="header">
+      <div>
+        <Logo name="header" />
+      </div>
       <nav>
         <ul>
           <li>
