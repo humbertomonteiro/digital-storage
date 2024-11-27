@@ -1,9 +1,13 @@
 import "./App.css";
+import Layout from "./pages/Layout";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
     <>
-      <h1>Digital Store</h1>
+      <Layout>
+        <AppRoutes />
+      </Layout>
     </>
   );
 }

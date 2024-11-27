@@ -1,7 +1,7 @@
 const Categories = () => {
   return (
     <div>
-      <h1>Em breve...</h1>
+      <h1>Em breve categorias aqui.</h1>
     </div>
   );
 };

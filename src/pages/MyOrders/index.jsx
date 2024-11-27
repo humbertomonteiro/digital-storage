@@ -1,7 +1,7 @@
 const MyOrders = () => {
   return (
     <div>
-      <h1>Em breve...</h1>
+      <h1>Em breve seus pedidos aqui.</h1>
     </div>
   );
 };
