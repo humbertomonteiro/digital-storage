@@ -1,3 +1,174 @@
 .header {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  height: 192px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/*------------------Logo header-------------------*/
+.header-Logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-bars {
+  display: none;
+}
+
+/*------------------pesquisa header-------------------*/
+.header-group-search-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-search-desktop {
+  display: block;
+}
+
+.container-search-mobile {
+  display: none;
+}
+
+.header-search {
+  width: 660px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--light-gray-3);
+}
+
+.header-search input {
+  flex: 1;
+  height: 60px;
+  background-color: transparent;
+  border: 0;
+  padding: 0 28px;
+  font-size: 1.2rem;
+}
+
+.header-search svg {
+  margin: 0 28px;
+  font-size: 1.7rem;
+  color: var(--dark-gray-3);
+}
+
+.header-group-search-mobile-cart {
+  display: flex;
+  gap: 1rem;
+}
+
+/*------------------ botões hedear -------------------*/
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-buttons a {
+  color: var(--dark-gray-2);
+}
+
+.header-buttons button {
+  width: 114px;
+  height: 40px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button-search-mobile {
+  display: none;
+}
+
+/*------------------navegação-------------------*/
+.navbar ul,
+.navbar-mobile ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar ul li a,
+.navbar-mobile ul li a {
+  text-decoration: none;
+  padding: 0.2rem 0;
+  color: var(--dark-gray-2);
+}
+
+.active-link {
+  border-bottom: 3px solid var(--primary);
+}
+
+.container-navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    height: 66.5px;
+  }
+
+  .icon-bars {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .container-search-desktop {
+    display: none;
+  }
+
+  .container-search-mobile {
+    display: block;
+  }
+
+  .header-group-search-buttons {
+    display: none;
+  }
+
+  .container-navbar-desktop {
+    display: none;
+  }
+
+  .container-navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    position: absolute;
+    top: 66.5px;
+    left: -1rem;
+    padding: 1rem;
+    background-color: var(--white);
+  }
+
+  .button-search-mobile {
+    display: block;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .navbar-mobile ul {
+    flex-direction: column;
+  }
 }
