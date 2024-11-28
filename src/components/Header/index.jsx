@@ -19,9 +19,13 @@ const Search = () => {
   );
 };
 
-const ButtonsAuth = () => {
+const ButtonsAuth = ({ type }) => {
   return (
-    <div className="header-buttons">
+    <div
+      className={
+        type === "mobile" ? "header-buttons-mobile" : "header-buttons-desktop"
+      }
+    >
       <a href="#">Cadastre-se</a>
       <button>Entrar</button>
     </div>
@@ -108,7 +112,14 @@ const Header = () => {
             <CiSearch />
           </div>
 
-          <img src={cart} alt="Icone carrinho de compras" />
+          <div className="cart">
+            <img
+              className="icon-cart"
+              src={cart}
+              alt="Icone carrinho de compras"
+            />
+            <span className="number-items">2</span>
+          </div>
         </div>
       </div>
 
@@ -124,8 +135,13 @@ const Header = () => {
 
       {showNavbarMobile && (
         <div className="container-navbar-mobile">
-          <Navbar type="mobile" />
-          <ButtonsAuth />
+          <div className="navbar-mobile-content">
+            <div className="navbar-mobile-pages">
+              <strong>Páginas</strong>
+              <Navbar type="mobile" />
+            </div>
+            <ButtonsAuth type="mobile" />
+          </div>
         </div>
       )}
     </header>
