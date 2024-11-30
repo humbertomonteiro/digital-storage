@@ -3,7 +3,7 @@ import "./header.css";
 import { useState } from "react";
 
 import Logo from "../Logo";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { CiSearch } from "react-icons/ci";
 import { FaBars } from "react-icons/fa6";
@@ -11,11 +11,27 @@ import { FaBars } from "react-icons/fa6";
 import cart from "../../assets/mini-cart.svg";
 
 const Search = () => {
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    navigate(`/products/${search}`);
+  };
+
   return (
-    <label className="header-search">
-      <input type="text" placeholder="Pesquisar produto..." />
-      <CiSearch />
-    </label>
+    <form onSubmit={handleSearch}>
+      <label className="header-search">
+        <input
+          type="text"
+          placeholder="Pesquisar produto..."
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
+        <button type="submit">
+          <CiSearch />
+        </button>
+      </label>
+    </form>
   );
 };
 
@@ -46,7 +62,7 @@ const Navbar = ({ type }) => {
         </li>
         <li>
           <NavLink
-            to={"/products"}
+            to={"/products/all"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
             Produtos
