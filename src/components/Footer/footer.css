@@ -1,0 +1,12 @@
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    height: 454px;
+}
+.conteiner{
+    display: flex;
+}
+.conteiner div{
+    flex-wrap: wrap;
+    min-width: 25%;
+}
