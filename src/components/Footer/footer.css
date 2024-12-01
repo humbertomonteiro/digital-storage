@@ -1,7 +1,7 @@
 footer {
     background-color: #1f1f1f;
     color: #ffffff;
-    height: 400px;
+    min-height: 400px;
 }
 
 footer p{
@@ -12,23 +12,34 @@ footer hr{
 }
 .conteiner{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     min-height: 80%;
     padding-top: 40px;
 }
 .conteiner div{
-    
-    flex-wrap: wrap;
-    max-width: 25%;
+    flex-grow: 1;
+    max-width: 33%;
 }
 .conteiner h3{
     font-size: 18px;
+    padding-bottom:20px;
 }
 .conteiner div ul{
     font-size: 16px;
     list-style: none;
-    flex-wrap: wrap;
-
+    text-wrap: wrap;
+}
+.conteiner div ul li{
+    margin: 5px 0;
+}
+.conteiner div ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    transform: scale(1.1);
+}
+.conteiner div ul li a:hover{
+    color:#c92071;
 }
 .logo p{
     margin:20px 0;
@@ -39,4 +50,11 @@ footer hr{
 .logo ul{
     display: flex;
     gap: 20px;
+}
+.list{
+    display:flex;
+    width:50%;
+}
+.list{
+    justify-content: space-around;
 }

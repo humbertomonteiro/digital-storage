@@ -5,30 +5,26 @@ import imgTwitter from "../../assets/twitter.svg";
 import Logo from "../../components/Logo";
 import React from "react";
 
-const titles = ["Informações", "Categorias", "Contato"];
-const informacoes = ["Sobre Drip Store","Segurança","Wishlist","Blog","Trabalhe conosco","Meus Pedidos"];
-const myInf = informacoes.map(informacao => <li key={informacao}>{informacao}</li>);
+const titles = [{"text":"Informações"}, {"text":"Categorias"}];
+const informacoes = [{"text":"Sobre Drip Store","link":"/about"},{"text":"Segurança","link":"/security"},{"text":"Wishlist","link":"/WL"},{"text":"Blog","link":"/blog"},{"text":"Trabalhe conosco","link":"/trabalheConosco"},{"text":"Meus Pedidos","link":"/pedidos"}];
+const myInf = informacoes.map(informacao => <li key={informacao.text}><a href={informacao.link}>{informacao.text}</a></li>);
 
-const categorias = ["Camisas","Calças","Bonés","Headphones","Tênis"];
-const myCat = categorias.map(categoria => <li key={categoria}>{categoria}</li>);
-
-const contatos = ["Av. Santos Drumont, 1510- 1 andar - Aldeota, Fortaleza - CE, 60.150-181", "(85) 3051-3411"];
-const myCont = contatos.map(contato => <li key={contato}>{contato}</li>);
+const categorias = [{"text":"Camisas","link":"/camisas"},{"text":"Calças","link":"/calcas"},{"text":"Bonés","link":"/bones"},{"text":"Headphones","link":"/headphones"},{"text":"Tênis","link":"/tenis"}];
+const myCat = categorias.map(categoria => <li key={categoria.text}><a href={categoria.link}>{categoria.text}</a></li>);
 
 export const Infor = () => {
 
     return(
         <>
-        {titles.map((title,index) =>
-            <div className="info" key={title} >
-                <h3>{title}</h3>
-                <ul>
-                   {index == 0 && myInf}
-                   {index == 1 && myCat}
-                   {index == 2 && myCont}
-                </ul>
-            </div>
-        )}
+            {titles.map((title,index) =>
+                <div className="info" key={title.text}>
+                    <h3 key={index}>{title.text}</h3>
+                    <ul>
+                        {index == 0 && myInf}
+                        {index == 1 && myCat}
+                    </ul>
+                </div>
+            )}
         </>
     );
 
@@ -52,7 +48,17 @@ const Footer = () => {
                         <li><a href="https://twitter.com/falecomoiel" target="_blank"><img src={imgTwitter} alt={"X"} /></a></li>
                     </ul>
                 </div>
-                <Infor />
+                <div className="list">
+                    <Infor />
+                </div>    
+                <div>
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Av. Santos Drumont, 1510- 1 andar - Aldeota, Fortaleza - CE, 60.150-181</li>
+                        <li>(85) 3051-3411</li>
+                    </ul>
+
+                </div>
             </div>    
             <hr />
             <p>@ 2024 Digital Store</p>
