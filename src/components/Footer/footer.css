@@ -1,12 +1,42 @@
 footer {
     background-color: #1f1f1f;
     color: #ffffff;
-    height: 454px;
+    height: 400px;
+}
+
+footer p{
+    text-align: center;
+}
+footer hr{
+    margin-bottom: 20px;
 }
 .conteiner{
     display: flex;
+    justify-content: space-around;
+    min-height: 80%;
+    padding-top: 40px;
 }
 .conteiner div{
+    
     flex-wrap: wrap;
-    min-width: 25%;
+    max-width: 25%;
+}
+.conteiner h3{
+    font-size: 18px;
+}
+.conteiner div ul{
+    font-size: 16px;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.logo p{
+    margin:20px 0;
+    font-size: 16px;
+    text-align: left;
+
+}
+.logo ul{
+    display: flex;
+    gap: 20px;
 }
