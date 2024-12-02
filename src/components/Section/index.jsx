@@ -4,7 +4,7 @@ const Section = ({props}) => {
 
     return(
         <div>
-            <h4 style={props.titleAlign}>{props.href}</h4>
+            <h4 style={{float:props.titleAlign}}>{props.href}</h4>
             <a href={props.link.text}>{props.text}</a>
             {props.children}
         </div>
