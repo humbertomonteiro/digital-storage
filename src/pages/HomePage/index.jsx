@@ -1,9 +1,10 @@
+import TopCollection from "../../components/TopCollection";
 import "./homePage.css";
 
 const HomePage = () => {
   return (
     <div>
-      <h1>HOme</h1>
+      <TopCollection />
     </div>
   );
 };

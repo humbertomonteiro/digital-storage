@@ -48,12 +48,13 @@ const ButtonsAuth = ({ type }) => {
   );
 };
 
-const Navbar = ({ type }) => {
+const Navbar = ({ type, functionShowNavbar }) => {
   return (
     <nav className={type === "mobile" ? "navbar-mobile" : "navbar"}>
       <ul>
         <li>
           <NavLink
+            onClick={functionShowNavbar}
             to={"/"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
@@ -62,6 +63,7 @@ const Navbar = ({ type }) => {
         </li>
         <li>
           <NavLink
+            onClick={functionShowNavbar}
             to={"/products/all"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
@@ -70,6 +72,7 @@ const Navbar = ({ type }) => {
         </li>
         <li>
           <NavLink
+            onClick={functionShowNavbar}
             to={"/categories"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
@@ -78,6 +81,7 @@ const Navbar = ({ type }) => {
         </li>
         <li>
           <NavLink
+            onClick={functionShowNavbar}
             to={"/my-orders"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
@@ -154,7 +158,10 @@ const Header = () => {
           <div className="navbar-mobile-content">
             <div className="navbar-mobile-pages">
               <strong>Páginas</strong>
-              <Navbar type="mobile" />
+              <Navbar
+                type="mobile"
+                functionShowNavbar={handleShowNavbarMobile}
+              />
             </div>
             <ButtonsAuth type="mobile" />
           </div>

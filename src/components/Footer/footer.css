@@ -1,60 +1,67 @@
 footer {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    min-height: 400px;
+  background-color: var(--dark-gray);
+  min-height: 454px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
 }
 
-footer p{
-    text-align: center;
+footer p {
+  text-align: center;
 }
-footer hr{
-    margin-bottom: 20px;
-}
-.conteiner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 80%;
-    padding-top: 40px;
-}
-.conteiner div{
-    flex-grow: 1;
-    max-width: 33%;
-}
-.conteiner h3{
-    font-size: 18px;
-    padding-bottom:20px;
-}
-.conteiner div ul{
-    font-size: 16px;
-    list-style: none;
-    text-wrap: wrap;
-}
-.conteiner div ul li{
-    margin: 5px 0;
-}
-.conteiner div ul li a{
-    text-decoration: none;
-    color:#ffffff;
-    transform: scale(1.1);
-}
-.conteiner div ul li a:hover{
-    color:#c92071;
-}
-.logo p{
-    margin:20px 0;
-    font-size: 16px;
-    text-align: left;
 
+.conteiner-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  gap: 2rem;
 }
-.logo ul{
-    display: flex;
-    gap: 20px;
+.conteiner-footer div {
+  flex: 1 1 300px;
 }
-.list{
-    display:flex;
-    width:50%;
+.conteiner-footer h3 {
+  font-size: 18px;
+  padding-bottom: 1.2rem;
 }
-.list{
-    justify-content: space-around;
+.conteiner-footer div ul {
+  font-size: 16px;
+  list-style: none;
+  text-wrap: wrap;
+}
+.conteiner-footer div ul li {
+  margin: 1rem 0;
+}
+.conteiner-footer div ul li a {
+  text-decoration: none;
+  color: var(--white);
+  transform: scale(1.1);
+}
+.conteiner-footer div ul li a:hover {
+  color: #c92071;
+}
+.logo-footer p {
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+.logo-footer ul {
+  display: flex;
+  gap: 20px;
+}
+.list-footer {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+}
+.list-footer {
+  justify-content: space-around;
+}
+
+.last-div-footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--dark-gray-2);
 }
