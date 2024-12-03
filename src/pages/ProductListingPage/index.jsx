@@ -74,7 +74,7 @@ const ProductListingPage = () => {
           {/* ---------------adicionar component FilterGroup----------------- */}
         </div>
       </div>
-      <Section>
+      <Section title="produtos" titleAlign="center" >
         <ProductListing
           products={
             orderBy === "cheaper"

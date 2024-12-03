@@ -1,8 +1,8 @@
 import ProductCard from "../ProductCard";
-
+import "./productlisting.css"
 const ProductListing = ({ products }) => {
   return (
-    <div>
+    <div className="container-product-listing" >
       {products.length < 1 ? (
         <div>Infelizmente não temos o que está procurando.</div>
       ) : (
