@@ -1,13 +1,13 @@
-import imgP1 from "../assets/imgs/product-image-1.jpeg";
-import thumbP1 from "../assets/imgs/product-thumb-1.jpeg";
-import imgP2 from "../assets/imgs/product-image-2.jpeg";
-import thumbP2 from "../assets/imgs/product-thumb-2.jpeg";
-import imgP3 from "../assets/imgs/product-image-3.jpeg";
-import thumbP3 from "../assets/imgs/product-thumb-3.jpeg";
-import imgP4 from "../assets/imgs/product-image-4.jpeg";
-import thumbP4 from "../assets/imgs/product-thumb-4.jpeg";
-import imgP5 from "../assets/imgs/product-image-5.jpeg";
-import thumbP5 from "../assets/imgs/product-thumb-5.jpeg";
+import imgP1 from "../../assets/imgs/product-image-1.jpeg";
+import thumbP1 from "../../assets/imgs/product-thumb-1.jpeg";
+import imgP2 from "../../assets/imgs/product-image-2.jpeg";
+import thumbP2 from "../../assets/imgs/product-thumb-2.jpeg";
+import imgP3 from "../../assets/imgs/product-image-3.jpeg";
+import thumbP3 from "../../assets/imgs/product-thumb-3.jpeg";
+import imgP4 from "../../assets/imgs/product-image-4.jpeg";
+import thumbP4 from "../../assets/imgs/product-thumb-4.jpeg";
+import imgP5 from "../../assets/imgs/product-image-5.jpeg";
+import thumbP5 from "../../assets/imgs/product-thumb-5.jpeg";
 
 export const dataProducts = [
   {

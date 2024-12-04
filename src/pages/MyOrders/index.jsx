@@ -1,7 +1,11 @@
+import Section from "../../components/Section";
+
 const MyOrders = () => {
   return (
     <div>
-      <h1>Em breve seus pedidos aqui.</h1>
+      <Section>
+        <h1>Em breve seus pedidos aqui.</h1>
+      </Section>
     </div>
   );
 };

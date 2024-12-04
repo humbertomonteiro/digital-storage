@@ -9,9 +9,11 @@ import { CiSearch } from "react-icons/ci";
 import { FaBars } from "react-icons/fa6";
 
 import cart from "../../assets/mini-cart.svg";
+import useProducts from "../../data/hooks/useProducts";
 
 const Search = () => {
-  const [search, setSearch] = useState("");
+  const { setSearch, search } = useProducts();
+
   const navigate = useNavigate();
 
   const handleSearch = () => {

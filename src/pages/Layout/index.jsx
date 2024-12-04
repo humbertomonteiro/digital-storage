@@ -4,13 +4,17 @@ import Footer from "../../components/Footer";
 
 import { BrowserRouter } from "react-router-dom";
 
+import ProductsProvider from "../../data/contexts/ProductsContext";
+
 const Layout = ({ children }) => {
   return (
     <div>
       <BrowserRouter>
-      <Header />
-        <main className="layout-main">{children}</main>
-        <Footer />  
+        <ProductsProvider>
+          <Header />
+          <main className="layout-main">{children}</main>
+          <Footer />
+        </ProductsProvider>
       </BrowserRouter>
     </div>
   );

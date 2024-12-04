@@ -1,17 +1,27 @@
 .container-section {
-  background-color: #f9f8fe;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  padding-top: 2rem;
 }
 
 .title-section {
   width: 100%;
+  margin-bottom: 1rem;
+  color: var(--dark-gray-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-[titleAlign="center"] {
+
+.title-section a {
+  color: var(--primary);
+  text-decoration: none;
+}
+[data-title-align="center"] {
   text-align: center;
 }
-[titleAlign="start"] {
+[data-title-align="start"] {
   text-align: start;
 }

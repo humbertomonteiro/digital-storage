@@ -1,5 +1,10 @@
 .container-product-listing {
-  display: grid;
-  grid-template-columns: 321px 321px 321px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   gap: 8px;
 }
+
+/* @media (max-width: ) {
+} */

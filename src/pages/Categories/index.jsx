@@ -1,7 +1,10 @@
+import Section from "../../components/Section";
 const Categories = () => {
   return (
     <div>
-      <h1>Em breve categorias aqui.</h1>
+      <Section>
+        <h1>Em breve categorias aqui.</h1>
+      </Section>
     </div>
   );
 };

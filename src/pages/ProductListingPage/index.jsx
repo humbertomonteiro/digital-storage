@@ -1,11 +1,10 @@
-import { useEffect, useState, useMemo } from "react";
+import { useState } from "react";
 
 import ProductListing from "../../components/ProductListing";
 import Section from "../../components/Section";
 
-import { dataProducts } from "../../data/dataProducts";
-
 import { useParams } from "react-router-dom";
+import useProducts from "../../data/hooks/useProducts";
 
 //componente que ordena por mais caro ou mais barato
 const OrderBy = ({ setState }) => {
@@ -21,49 +20,13 @@ const OrderBy = ({ setState }) => {
 };
 
 const ProductListingPage = () => {
-  const [allProducts, setAllProducts] = useState([]);
   const [orderBy, setOrderBy] = useState("cheaper");
 
   const { search } = useParams();
-
-  //buscando produtos de uma api(fake store)
-  async function fetchData() {
-    const url = "https://fakestoreapi.com/products";
-    try {
-      const response = await fetch(url);
-
-      if (!response.ok) {
-        throw new Error("Response status: " + response.status);
-      }
-
-      const products = await response.json();
-
-      setAllProducts(products);
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, [search]);
-
-  // filtra de acordo com o parâmetro passado(parâmetro passado no search do header),
-  // busca por nome ou categoria.
-  const products = useMemo(() => {
-    const allProductsAndDataProducts = [...allProducts, ...dataProducts];
-    if (search === "all") {
-      return allProductsAndDataProducts;
-    }
-    return allProductsAndDataProducts.filter(
-      (product) =>
-        product.name?.toLowerCase().includes(search.toLowerCase()) ||
-        product.category?.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [search, allProducts]);
+  const { products } = useProducts();
 
   return (
-    <div>
+    <div className="container">
       <div>
         <span>
           Resultado para {search}: {products.length}
