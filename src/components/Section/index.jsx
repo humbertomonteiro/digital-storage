@@ -1,11 +1,13 @@
 import "./section.css";
-const Section = ({ title, titleAlign, link, children }) => {
-  //titleAlign recebe center ou start.
+import { Link } from "react-router-dom";
+const Section = ({ title, titleAlign = "start", link, children }) => {
+  // titleAlign recebe start por padrão. caso queiro o
+  // title centralizado passar o atributo titleAlign='center'
   return (
     <section className="container-section container">
       <div className="title-section" data-title-align={titleAlign}>
         <h2>{title}</h2>
-        {link && <a href={link.href}>{link.text}</a>}
+        {link && <Link to={link.href}>{link.text}</Link>}
       </div>
       <div>{children}</div>
     </section>

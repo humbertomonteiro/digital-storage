@@ -3,7 +3,6 @@ import { useState } from "react";
 import ProductListing from "../../components/ProductListing";
 import Section from "../../components/Section";
 
-import { useParams } from "react-router-dom";
 import useProducts from "../../data/hooks/useProducts";
 
 //componente que ordena por mais caro ou mais barato
@@ -22,8 +21,7 @@ const OrderBy = ({ setState }) => {
 const ProductListingPage = () => {
   const [orderBy, setOrderBy] = useState("cheaper");
 
-  const { search } = useParams();
-  const { products } = useProducts();
+  const { products, search } = useProducts();
 
   return (
     <div className="container">
@@ -37,7 +35,7 @@ const ProductListingPage = () => {
           {/* ---------------adicionar component FilterGroup----------------- */}
         </div>
       </div>
-      <Section title="produtos" titleAlign="start">
+      <Section>
         <ProductListing
           products={
             orderBy === "cheaper"

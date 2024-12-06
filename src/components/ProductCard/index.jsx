@@ -1,21 +1,36 @@
 import "./productCard.css";
-const ProductCard = ({ product, topProducts }) => {
+import { Link } from "react-router-dom";
+
+const ProductCard = ({ product, styleForColumns }) => {
+  const formatPrice = (value, locales) => {
+    return new Intl.NumberFormat(locales, {
+      maximumFractionDigits: 2,
+      minimumFractionDigits: 2,
+    }).format(value);
+  };
+
   return (
-    <div className="container-product-card" data-top-products={topProducts}>
-      <img loading="lazy" src={product.image} alt={product.id} />
+    <Link
+      to={`/product-view/${product.id}`}
+      className="container-product-card"
+      data-style-for-columns={styleForColumns}
+    >
+      <div className="product-card-img">
+        <img loading="lazy" src={product.image} alt={product.id} />
+      </div>
       <div className="product-info">
         {/* <span>{product.category}</span> */}
         <p>{product.title}</p>
-        <div className="product-price">
+        <div className="/product-price">
           {product.priceDiscount && (
             <strong className="price-discount">
-              R$ {product.priceDiscount}
+              R$ {formatPrice(product.priceDiscount, "pt-BR")}
             </strong>
           )}
-          <strong>R$ {product.price}</strong>
+          <strong>R$ {formatPrice(product.price, "pt-BR")}</strong>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

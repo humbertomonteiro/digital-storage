@@ -1,9 +1,5 @@
 .container-section {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .title-section {
@@ -11,17 +7,15 @@
   margin-bottom: 1rem;
   color: var(--dark-gray-2);
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-
 .title-section a {
   color: var(--primary);
   text-decoration: none;
 }
 [data-title-align="center"] {
-  text-align: center;
+  justify-content: center;
 }
 [data-title-align="start"] {
-  text-align: start;
+  justify-content: space-between;
 }
