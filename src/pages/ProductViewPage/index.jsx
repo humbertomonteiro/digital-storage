@@ -9,7 +9,7 @@ const ProductViewPage = () => {
   const { products } = useProducts();
   const productShow = products.filter((product) => product.id === +id);
   return (
-    <div>
+    <div className="container">
       <div>
         {/*---------------- componente gallery aqui --------------*/}
         <img src={productShow[0]?.image} alt={productShow[0]?.title} />

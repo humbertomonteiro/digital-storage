@@ -10,7 +10,7 @@ import imgSale from "../../assets/imgs/product-thumb-1.jpeg";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="container">
       <Section title={"Coleções em destaque"}>
         <div className="top-collection-imgs">
           <img src={collection1} alt="Imagem coleção em destaque 1" />

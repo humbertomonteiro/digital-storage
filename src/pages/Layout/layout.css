@@ -1,5 +1,6 @@
 .layout-main {
   position: relative;
   z-index: 1;
-  background-color: #f9f8fe;
+  background-color: var(--light-gray-3);
+  padding: 1rem 0;
 }

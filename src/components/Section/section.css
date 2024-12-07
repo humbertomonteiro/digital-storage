@@ -1,13 +1,15 @@
 .container-section {
-  padding: 2rem 0;
+  width: 100%;
 }
 
 .title-section {
   width: 100%;
-  margin-bottom: 1rem;
   color: var(--dark-gray-2);
   display: flex;
   align-items: center;
+}
+.title-section h2 {
+  margin-bottom: 1rem;
 }
 .title-section a {
   color: var(--primary);

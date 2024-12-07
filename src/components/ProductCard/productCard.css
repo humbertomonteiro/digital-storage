@@ -1,11 +1,12 @@
 .container-product-card {
   margin-bottom: 10px;
   font-size: 24px;
-  width: 321px;
+  width: 292px;
   max-width: 47%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
   color: var(--dark-gray);
 }
@@ -13,7 +14,7 @@
 .product-card-img {
   width: 100%;
   background-color: var(--white);
-  height: 292px;
+  height: 321px;
   border-radius: 4px;
 }
 .product-card-img img {
@@ -29,10 +30,6 @@
 .price-discount {
   color: var(--light-gray);
   text-decoration: line-through;
-}
-
-[data-style-for-columns="true"] {
-  width: 292px;
 }
 
 @media (max-width: 750px) {

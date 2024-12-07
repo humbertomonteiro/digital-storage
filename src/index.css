@@ -32,7 +32,13 @@ body {
 basta usar essa classe para que o conteúdo fique no
 centro e com o tamanho padrão. */
 .container {
-  width: 1240px;
+  width: 1280px;
   max-width: 90%;
   margin: 0 auto;
 }
+/* 
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+} */

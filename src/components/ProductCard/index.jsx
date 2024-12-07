@@ -1,7 +1,7 @@
 import "./productCard.css";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ product, styleForColumns }) => {
+const ProductCard = ({ product }) => {
   const formatPrice = (value, locales) => {
     return new Intl.NumberFormat(locales, {
       maximumFractionDigits: 2,
@@ -10,11 +10,7 @@ const ProductCard = ({ product, styleForColumns }) => {
   };
 
   return (
-    <Link
-      to={`/product-view/${product.id}`}
-      className="container-product-card"
-      data-style-for-columns={styleForColumns}
-    >
+    <Link to={`/product-view/${product.id}`} className="container-product-card">
       <div className="product-card-img">
         <img loading="lazy" src={product.image} alt={product.id} />
       </div>
