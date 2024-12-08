@@ -1,6 +1,7 @@
 import "./homePage.css";
 import ProductListing from "../../components/ProductListing";
 import Section from "../../components/Section";
+import GalleryHome from "../../components/GalleryHome";
 
 import collection1 from "../../assets/imgs/collection-1.png";
 import collection2 from "../../assets/imgs/collection-2.png";
@@ -11,6 +12,7 @@ import imgSale from "../../assets/imgs/product-thumb-1.jpeg";
 const HomePage = () => {
   return (
     <div className="container">
+      <Section><GalleryHome/></Section>
       <Section title={"Coleções em destaque"}>
         <div className="top-collection-imgs">
           <img src={collection1} alt="Imagem coleção em destaque 1" />
