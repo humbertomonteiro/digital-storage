@@ -36,7 +36,7 @@ const BuyBox = ({ productShow }) => {
 
       <strong>R$ {productShow?.price}</strong>
       <h2>Descrição</h2>
-      <p>{productShow?.description}</p>
+      <p>{productShow?.description ?? "Produto sem descrição"}</p>
       <ProductOptions
         options={optionsLength}
         shape="square"

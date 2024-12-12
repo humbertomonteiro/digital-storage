@@ -6,8 +6,7 @@
   --tertiary: #991956;
   --error: #ee4266;
   --success: #52ca76;
-  --warning: #52ca76;
-  --success: #f6aa1c;
+  --warning: #f6aa1c;
 
   --dark-gray: #1f1f1f;
   --dark-gray-2: #474747;
@@ -33,12 +32,6 @@ basta usar essa classe para que o conteúdo fique no
 centro e com o tamanho padrão. */
 .container {
   width: 1280px;
-  max-width: 90%;
+  max-width: 92%;
   margin: 0 auto;
 }
-/* 
-@media (max-width: 480px) {
-  .container {
-    max-width: 90%;
-  }
-} */

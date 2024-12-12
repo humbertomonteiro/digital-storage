@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .order-products-with-button-filter {
@@ -10,19 +11,22 @@
   justify-content: space-between;
 }
 
+.order-products-with-button-filter span {
+  color: var(--dark-gray-2);
+}
+
 .order-products-with-button-filter button {
   display: none;
 }
 
 .product-listing-page-content {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .product-listing-page-filter-group {
   width: 308px;
   height: fit-content;
-  margin-top: 1rem;
   background-color: var(--white);
   padding: 1.5rem;
   border-radius: 4px;
@@ -135,5 +139,15 @@
     font-size: 1rem;
     background-color: transparent;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-order-by {
+    padding: 0.5rem 0.75rem;
+  }
+  .container-order-by h3,
+  .container-order-by select {
+    font-size: 0.8rem;
   }
 }

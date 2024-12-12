@@ -2,7 +2,7 @@ import "./productlisting.css";
 import ProductCard from "../ProductCard";
 import useProducts from "../../data/hooks/useProducts";
 
-const ProductListing = ({ limitedProducts, styleForColumns }) => {
+const ProductListing = ({ limitedProducts, filter }) => {
   const { products } = useProducts();
   const productsShow = products.slice(0, limitedProducts);
 
@@ -11,14 +11,8 @@ const ProductListing = ({ limitedProducts, styleForColumns }) => {
       {productsShow.length < 1 ? (
         <div>Infelizmente não temos o que está procurando.</div>
       ) : (
-        productsShow?.map((product) => {
-          return (
-            <ProductCard
-              product={product}
-              styleForColumns={styleForColumns}
-              key={product.id}
-            />
-          );
+        productsShow.map((product) => {
+          return <ProductCard product={product} key={product.id} />;
         })
       )}
     </div>

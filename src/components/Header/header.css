@@ -5,13 +5,14 @@
   position: relative;
   z-index: 5;
   height: 192px;
+  padding: 2rem 0;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 /*------------------Logo header-------------------*/
@@ -106,6 +107,9 @@
 }
 
 /*------------------navegação-------------------*/
+.navbar {
+  padding-top: 2rem;
+}
 .navbar ul,
 .navbar-mobile ul {
   display: flex;
@@ -158,6 +162,7 @@
 @media (max-width: 1200px) {
   .header {
     height: fit-content;
+    padding: 0;
   }
   .header-content {
     height: 66.5px;
@@ -179,6 +184,7 @@
   .container-search-mobile {
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
   }
 
   .header-group-search-buttons {

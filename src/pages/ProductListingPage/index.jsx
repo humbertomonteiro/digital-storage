@@ -83,8 +83,10 @@ const ProductListingPage = () => {
     <div className="container">
       <div className="order-products">
         <span>
-          Resultado para {search ? search : "Todos os produtos"}:{" "}
-          {products.length}
+          <strong>
+            Resultado para "{search ? search : "Todos os produtos"}":{" "}
+          </strong>
+          {products.length} produtos
         </span>
         <div className="order-products-with-button-filter">
           <OrderBy setState={setOrderBy} />

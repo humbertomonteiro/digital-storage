@@ -5,10 +5,12 @@ const Section = ({ title, titleAlign = "start", link, children }) => {
   // title centralizado passar o atributo titleAlign='center'
   return (
     <section className="container-section">
-      <div className="title-section" data-title-align={titleAlign}>
-        <h2>{title}</h2>
-        {link && <Link to={link.href}>{link.text}</Link>}
-      </div>
+      {title && (
+        <div className="title-section" data-title-align={titleAlign}>
+          <h2>{title}</h2>
+          {link && <Link to={link.href}>{link.text}</Link>}
+        </div>
+      )}
       <div>{children}</div>
     </section>
   );

@@ -17,12 +17,10 @@ const Search = () => {
   const navigate = useNavigate();
 
   return (
-    // <form onSubmit={handleSearch}>
     <label className="header-search">
       <input
         type="text"
         placeholder="Pesquisar produto..."
-        // onChange={(e) => setSearch(e.target.value)}
         onChange={(e) => {
           setSearch(e.target.value);
           navigate("/products");
@@ -33,7 +31,6 @@ const Search = () => {
         <CiSearch />
       </button>
     </label>
-    // </form>
   );
 };
 
