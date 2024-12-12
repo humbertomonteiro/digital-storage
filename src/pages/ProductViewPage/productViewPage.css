@@ -1,0 +1,33 @@
+.product-view {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.product-view-gallery {
+  position: relative;
+  width: 58%;
+}
+.product-view-buy-box {
+  position: relative;
+  width: 42%;
+}
+
+@media (max-width: 950px) {
+  .product-view {
+    flex-direction: column;
+  }
+
+  .product-view-gallery,
+  .product-view-buy-box {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-view {
+    gap: 0;
+  }
+}

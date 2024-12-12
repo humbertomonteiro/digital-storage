@@ -1,20 +1,18 @@
 import "./productlisting.css";
 import ProductCard from "../ProductCard";
+import useProducts from "../../data/hooks/useProducts";
 
-const ProductListing = ({ products, topProducts }) => {
+const ProductListing = ({ limitedProducts, filter }) => {
+  const { products } = useProducts();
+  const productsShow = products.slice(0, limitedProducts);
+
   return (
     <div className="container-product-listing">
-      {products.length < 1 ? (
+      {productsShow.length < 1 ? (
         <div>Infelizmente não temos o que está procurando.</div>
       ) : (
-        products?.map((product) => {
-          return (
-            <ProductCard
-              product={product}
-              key={product.id}
-              topProducts={topProducts}
-            />
-          );
+        productsShow.map((product) => {
+          return <ProductCard product={product} key={product.id} />;
         })
       )}
     </div>

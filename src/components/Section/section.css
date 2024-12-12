@@ -1,18 +1,15 @@
 .container-section {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  padding-top: 2rem;
+  width: 100%;
+  padding-bottom: 3rem;
 }
 
 .title-section {
   width: 100%;
-  margin-bottom: 1rem;
   color: var(--dark-gray-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .title-section a {
@@ -20,8 +17,14 @@
   text-decoration: none;
 }
 [data-title-align="center"] {
-  text-align: center;
+  justify-content: center;
 }
 [data-title-align="start"] {
-  text-align: start;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .title-section h2 {
+    font-size: 1rem;
+  }
 }

@@ -16,24 +16,21 @@ const Search = () => {
 
   const navigate = useNavigate();
 
-  const handleSearch = () => {
-    navigate(`/products/${search}`);
-  };
-
   return (
-    <form onSubmit={handleSearch}>
-      <label className="header-search">
-        <input
-          type="text"
-          placeholder="Pesquisar produto..."
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-        />
-        <button type="submit">
-          <CiSearch />
-        </button>
-      </label>
-    </form>
+    <label className="header-search">
+      <input
+        type="text"
+        placeholder="Pesquisar produto..."
+        onChange={(e) => {
+          setSearch(e.target.value);
+          navigate("/products");
+        }}
+        value={search}
+      />
+      <button type="submit">
+        <CiSearch />
+      </button>
+    </label>
   );
 };
 
@@ -66,7 +63,7 @@ const Navbar = ({ type, functionShowNavbar }) => {
         <li>
           <NavLink
             onClick={functionShowNavbar}
-            to={"/products/all"}
+            to={"/products"}
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
             Produtos
