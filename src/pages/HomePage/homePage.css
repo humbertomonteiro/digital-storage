@@ -1,3 +1,12 @@
-.home {
-  font-size: 4rem;
+.container-top-collection-imgs {
+  display: flex;
+  justify-content: space-around;
+  width: 405px;
+  height: 251px;
 }
+.destaque-imagem {
+ border-radius: 10px;
+ margin: 4px;
+}
+
+

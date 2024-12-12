@@ -15,10 +15,10 @@ const HomePage = () => {
   return (
     <div>
       <Section title={"Coleções em destaque"}>
-        <div className="top-collection-imgs">
-          <img src={collection1} alt="Imagem coleção em destaque 1" />
-          <img src={collection2} alt="Imagem coleção em destaque 2" />
-          <img src={collection3} alt="Imagem coleção em destaque 3" />
+        <div className="container-top-collection-imgs">
+          <img className="destaque-imagem" src={collection1} alt="Imagem coleção em destaque 1" />
+          <img className="destaque-imagem" src={collection2} alt="Imagem coleção em destaque 2" />
+          <img className="destaque-imagem" src={collection3} alt="Imagem coleção em destaque 3" />
         </div>
       </Section>
       <Section
