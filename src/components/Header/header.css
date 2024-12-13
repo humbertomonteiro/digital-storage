@@ -124,8 +124,10 @@
   color: var(--dark-gray-2);
 }
 
-.active-link {
+.navbar ul li .active-link {
   border-bottom: 3px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .container-navbar-mobile {

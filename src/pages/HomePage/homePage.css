@@ -67,8 +67,9 @@
 .container-sale {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 64px;
   justify-content: center;
+  align-items: center;
+  min-height: 553px;
   gap: 2rem;
   margin: 0 auto;
   background-color: var(--white);
@@ -92,6 +93,7 @@
 .sale-content span {
   color: var(--primary);
   font-weight: 600;
+  margin-bottom: -1rem;
 }
 .sale-content h2 {
   font-size: 48px;
@@ -113,11 +115,17 @@
   .container-icons {
     justify-content: flex-start;
   }
-  .sale-content {
-    padding-bottom: 64px;
+
+  .container-sale {
+    padding: 32px 0;
   }
+
   .sale-img {
     height: 300px;
+  }
+
+  .sale-content span {
+    color: var(--warning);
   }
 
   .sale-content h2 {
