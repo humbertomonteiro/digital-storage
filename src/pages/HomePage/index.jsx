@@ -20,13 +20,6 @@ import { IoShirtOutline } from "react-icons/io5";
 const HomePage = () => {
   return (
     <div>
-<<<<<<< HEAD
-      <Section title={"Coleções em destaque"}>
-        <div className="container-top-collection-imgs">
-          <img className="destaque-imagem" src={collection1} alt="Imagem coleção em destaque 1" />
-          <img className="destaque-imagem" src={collection2} alt="Imagem coleção em destaque 2" />
-          <img className="destaque-imagem" src={collection3} alt="Imagem coleção em destaque 3" />
-=======
       {/* <Section>
         <GalleryHome />
       </Section> */}
@@ -84,7 +77,6 @@ const HomePage = () => {
       <div className="container-sale">
         <div className="sale-img">
           <img src={imgSale} alt="Tênis em oferta" />
->>>>>>> 445dedafd22a9d86d60e4a6a160e0383e1644d4a
         </div>
         <div className="sale-content">
           <span>Oferta especial</span>
