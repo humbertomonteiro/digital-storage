@@ -8,7 +8,7 @@ import collection1 from "../../assets/imgs/collection-1.png";
 import collection2 from "../../assets/imgs/collection-2.png";
 import collection3 from "../../assets/imgs/collection-3.png";
 
-import imgSale from "../../assets/imgs/product-thumb-1.jpeg";
+import imgSale from "../../assets/imgs/tenis--verde.png";
 import { imagesGalleryHome } from "../../data/constants/imagesGalleryHome";
 import { Link } from "react-router-dom";
 
@@ -20,16 +20,6 @@ import { IoShirtOutline } from "react-icons/io5";
 const HomePage = () => {
   return (
     <div>
-<<<<<<< HEAD
-      <Section title={"Coleções em destaque"}>
-        <div className="container-top-collection-imgs">
-          <img className="destaque-imagem" src={collection1} alt="Imagem coleção em destaque 1" />
-          <img className="destaque-imagem" src={collection2} alt="Imagem coleção em destaque 2" />
-          <img className="destaque-imagem" src={collection3} alt="Imagem coleção em destaque 3" />
-=======
-      {/* <Section>
-        <GalleryHome />
-      </Section> */}
       <Gallery imgs={imagesGalleryHome} showThumbs={false}>
         <span>Melhores ofertas personalizadas</span>
         <h1>Queima de stoque Nike🔥</h1>
@@ -43,9 +33,22 @@ const HomePage = () => {
       <div className="container">
         <Section title={"Coleções em destaque"}>
           <div className="top-collection-imgs">
-            <img src={collection1} alt="Imagem coleção em destaque 1" />
-            <img src={collection2} alt="Imagem coleção em destaque 2" />
-            <img src={collection3} alt="Imagem coleção em destaque 3" />
+            <div>
+              {" "}
+              <span>30% OFF</span>
+              <img src={collection1} alt="Imagem coleção em destaque 1" />
+              <button>Comprar</button>
+            </div>
+            <div>
+              <span>30% OFF</span>
+              <img src={collection2} alt="Imagem coleção em destaque 2" />
+              <button>Comprar</button>
+            </div>
+            <div>
+              <span>30% OFF</span>
+              <img src={collection3} alt="Imagem coleção em destaque 3" />
+              <button>Comprar</button>
+            </div>
           </div>
         </Section>
 
@@ -84,7 +87,6 @@ const HomePage = () => {
       <div className="container-sale">
         <div className="sale-img">
           <img src={imgSale} alt="Tênis em oferta" />
->>>>>>> 445dedafd22a9d86d60e4a6a160e0383e1644d4a
         </div>
         <div className="sale-content">
           <span>Oferta especial</span>
