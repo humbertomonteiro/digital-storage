@@ -37,6 +37,8 @@
 
 .container-icons div span {
   font-size: 0.8rem;
+  color: var(--dark-gray-2);
+  font-weight: 600;
 }
 
 @media (max-width: 480px) {
