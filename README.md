@@ -16,6 +16,7 @@ Este projeto foi desenvolvido como parte de um curso para testar as habilidades 
   - [Licença](#licença)
   - [👥 Créditos](#-créditos)
     - [Integrantes do grupo](#integrantes-do-grupo)
+  - [Projeto em produção na vercel](#projeto-em-produção-na-vercel)
 
 ---
 
@@ -24,8 +25,6 @@ Este projeto foi desenvolvido como parte de um curso para testar as habilidades 
 O projeto é um protótipo de e-commerce que permite aos usuários:
 
 - Navegar por produtos.
-- Adicionar itens ao carrinho.
-- Simular compras e visualizar detalhes dos produtos.
 
 O foco principal foi a **estruturação do frontend**, com navegação por rotas, design responsivo e interatividade.
 
@@ -36,7 +35,7 @@ O foco principal foi a **estruturação do frontend**, com navegação por rotas
 - **Navegação por páginas**:
 
   - Página inicial com destaque para produtos.
-  - Listagemd de produtos.
+  - Listagem de produtos.
   - Filtragem de produtos.
   - Página de detalhes do produto.
 
@@ -121,6 +120,10 @@ Projeto desenvolvido no contexto de um curso para testar habilidades em frontend
 
 ### Integrantes do grupo
 
-- Nathalia
-- Luan
-- Humberto Monteiro Araujo Filho
+- Nathalia [Github](https://github.com/lia-asous)
+- Luan [Github](https://github.com/GregoriusBlack)
+- Humberto Monteiro Araujo Filho [Portfólio](https://portfolio-three-bay-73.vercel.app/)
+
+## Projeto em produção na vercel
+
+[Digital Store](digital-storage.vercel.app)
