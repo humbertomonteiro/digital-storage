@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const BuyBox = ({ productShow }) => {
   const optionsLength = [39, 40, 41, 42, 43];
-  const optionsColors = ["#000", "#fff", "#fefefe", "#252525"];
+  const optionsColors = ["#6feeff", "#c92071", "#5e5e5e", "#6d70b7"];
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -57,6 +57,8 @@ const BuyBox = ({ productShow }) => {
         text="Cores"
         type="color"
       />
+
+      <button>COMPRAR</button>
     </div>
   );
 };

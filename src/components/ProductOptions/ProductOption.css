@@ -13,6 +13,20 @@
   font-weight: 700;
   margin-bottom: 8px;
 }
+
+.options label {
+  cursor: pointer;
+}
+
+.options label input:checked + .square {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.options label input:checked + .circle {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary);
+}
+
 .options label input {
   display: none;
 }
@@ -32,4 +46,5 @@
   height: 31px;
   border-radius: 50%;
   display: block;
+  margin-right: 8px;
 }

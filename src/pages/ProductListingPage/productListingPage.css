@@ -5,6 +5,10 @@
   padding: 2rem 0;
 }
 
+.order-products strong {
+  color: var(--dark-gray-2);
+}
+
 .order-products-with-button-filter {
   min-width: 252px;
   display: flex;

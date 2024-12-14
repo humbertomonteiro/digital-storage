@@ -26,7 +26,8 @@
   color: var(--primary);
   border-radius: 10px;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .top-collection-imgs div img {
@@ -110,6 +111,8 @@
   border-radius: 8px;
   color: var(--white);
   border: none;
+  cursor: pointer;
+  font-weight: 700;
 }
 @media (max-width: 480px) {
   .container-icons {

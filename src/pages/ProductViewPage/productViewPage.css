@@ -1,3 +1,9 @@
+.container-product-view-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .product-view {
   width: 100%;
   display: flex;
