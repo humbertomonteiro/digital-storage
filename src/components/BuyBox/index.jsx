@@ -1,3 +1,4 @@
+import "./buybox.css";
 import { useEffect } from "react";
 import ProductOptions from "../ProductOptions";
 import { FaStar } from "react-icons/fa";
@@ -17,24 +18,31 @@ const BuyBox = ({ productShow }) => {
   });
 
   return (
-    <div>
+    <div className="container-buybox">
       <h1>{productShow?.title}</h1>
       <span>{productShow?.category}</span>
 
-      <div>
-        <div>
+      <div className="container-rating">
+        <div className="stars">
           <FaStar />
           <FaStar />
           <FaStar />
           <FaStar />
           <FaStar />
         </div>
-        <div>
-          5.0 <FaStar /> (90 Avaliações)
+        <div className="rating">
+          <div>
+            {" "}
+            5.0 <FaStar />{" "}
+          </div>
+          <p>(90 Avaliações)</p>
         </div>
       </div>
 
-      <strong>R$ {productShow?.price}</strong>
+      <strong>
+        {" "}
+        <span>R$ </span> {productShow?.price}
+      </strong>
       <h2>Descrição</h2>
       <p>{productShow?.description ?? "Produto sem descrição"}</p>
       <ProductOptions

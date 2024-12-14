@@ -1,6 +1,7 @@
+import "./filtergroup.css";
 const FilterGroup = ({ title, inputType, options }) => {
   return (
-    <aside>
+    <aside className="container-filter-group">
       <h3>{title}</h3>
       <ul>
         {options.map((option, index) => (

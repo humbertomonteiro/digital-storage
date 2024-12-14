@@ -1,0 +1,54 @@
+.container-buybox h1 {
+  font-size: 32px;
+  color: var(--dark-gray);
+  margin-bottom: 8px;
+}
+.container-buybox span {
+  color: var(--dark-gray-3);
+  font-size: 12px;
+}
+.container-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.stars {
+  display: flex;
+  gap: 2px;
+  color: var(--warning);
+}
+.rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.rating div {
+  background-color: var(--warning);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.rating p {
+  font-size: 14px;
+  color: var(--light-gray);
+}
+.container-buybox strong {
+  font-size: 32px;
+  color: var(--dark-gray-2);
+  margin: 10px 0;
+  display: block;
+}
+.container-buybox h2 {
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-bottom: 8px;
+}
+.container-buybox p {
+  color: var(--dark-gray-2);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
