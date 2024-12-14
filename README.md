@@ -126,4 +126,4 @@ Projeto desenvolvido no contexto de um curso para testar habilidades em frontend
 
 ## Projeto em produção na vercel
 
-[Digital Store](digital-storage.vercel.app)
+[Digital Store](https://digital-storage.vercel.app/)
