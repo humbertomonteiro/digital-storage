@@ -50,6 +50,14 @@ O foco principal foi a **estruturação do frontend**, com navegação por rotas
 
 ## 🛠 Tecnologias Utilizadas
 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+
 - **[Vite](https://vitejs.dev/)**: Ferramenta de construção rápida para projetos modernos.
 - **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **[React Router DOM](https://reactrouter.com/)**: Biblioteca para gerenciamento de rotas.
@@ -109,6 +117,30 @@ src/
 ├── App.jsx          # Componente principal
 ├── main.jsx         # Ponto de entrada do projeto
 ```
+```bash
+├── src/
+│   ├── compoments/
+│   │   ├── Header #Humberto
+│   │   ├── Footer #Luan
+│   │   ├── Logo #Luan
+│   │   ├── ProductListing #Humberto
+│   │   ├── ProductCard #Nathalia
+│   │   ├── ProductOptions #Humberto
+│   │   ├── BuyBox #Humberto
+│   │   ├── GalleryHome #Luan OBS: só foi usado para teste
+│   │   ├── Gallery #Humberto / Luan   OBS: Funcional e aplicado no site
+│   │   ├── BuyBox #Nathalia
+│   │   ├── Section #Nathalia
+│   │   ├── FilterGroup #Humberto
+│   │   └── ProductDetails #Nathalia
+│   └── pages/
+│       ├── HomePage # Nathalia / Humberto / Luan
+│       ├── ProductViewPage # Nathalia / Humberto / Luan
+│       └── ProductListingPage # Nathalia / Humberto / Luan
+├── App.js
+└── index.js
+```
+
 
 ## Licença
 
@@ -120,8 +152,8 @@ Projeto desenvolvido no contexto de um curso para testar habilidades em frontend
 
 ### Integrantes do grupo
 
-- Nathalia [Github](https://github.com/lia-asous)
-- Luan [Github](https://github.com/GregoriusBlack)
+- Nathalia Sousa [Github](https://github.com/lia-asous)
+- Francisco Luan Carlos Gregório [Github](https://github.com/GregoriusBlack)
 - Humberto Monteiro Araujo Filho [Portfólio](https://portfolio-three-bay-73.vercel.app/)
 
 ## Projeto em produção na vercel
